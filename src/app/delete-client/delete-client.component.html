@@ -1,0 +1,14 @@
+<div class="row mt-5">
+    <div class="col-3">
+        <input type="text" [(ngModel)]="client.id" class="form-control m-1" placeholder="Id">
+    </div>
+    <div class="col-3">
+        <input type="text" [(ngModel)]="client.name" class="form-control m-1" placeholder="Name">
+    </div>
+    <div class="col-3">
+        <input [(ngModel)]="client.compte.solde" type="text" class="form-control m-1" placeholder="Solde">
+    </div>
+    <div class="col-3">
+        <button (click)="updateClient()" class="btn form-control m-1 text-light"> Delete </button>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="row mt-5">
+    <div class="col-3" *ngFor="let item of _shared.clients">
+        <div class="card">
+            <div [ngClass]="{'card-body':true, 'bg-error':item.compte.solde < 0, 'bg-success':item.compte.solde>=0}">
+                <p>{{item.id}}</p>
+                <p>{{item.name}}</p>
+                <p>{{item.compte.solde}}</p>
+            </div>
+        </div>
+    </div>
+</div>
